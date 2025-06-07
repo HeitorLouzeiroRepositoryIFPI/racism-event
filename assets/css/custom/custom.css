@@ -1,0 +1,16 @@
+:root {
+    --footer-bg-color: #343a40;
+    --footer-text-color: #fff;
+    --footer-padding: 20px 0;
+    --footer-paragraph-margin: 0;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: var(--footer-padding);
+}
+
+.footer p {
+    margin-bottom: var(--footer-paragraph-margin);
+}
