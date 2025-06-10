@@ -64,9 +64,6 @@ export function HomePage() {
           </p>
         </TextField>
       </Content>
-      <Content>
-        <h1>Hello World</h1>
-      </Content>
 
       {/* Seção de Notícias */}
       <Content classes="bg-gray-50 py-16">
