@@ -1,6 +1,9 @@
 import { Content } from "../../components/Content";
 import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
+import { NewsSlider } from "../../components/NewsSlider";
+import noticesData from "../../../data/notices/notices.json";
+
 
 export function HomePage() {
   return (
@@ -63,6 +66,27 @@ export function HomePage() {
       </Content>
       <Content>
         <h1>Hello World</h1>
+      </Content>
+
+      {/* Seção de Notícias */}
+      <Content classes="bg-gray-50 py-16">
+        <div className="w-full">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Últimas <span className="text-orange-600">Notícias</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Acompanhe as notícias mais recentes sobre racismo, direitos humanos e inclusão social
+            </p>
+          </div>
+          <NewsSlider 
+            newsData={noticesData} 
+            autoPlay={true} 
+            autoPlayInterval={8000}
+            maxArticles={8}
+            className="max-w-5xl mx-auto"
+          />
+        </div>
       </Content>
     </>
   );
