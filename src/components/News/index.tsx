@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export interface Notice {
+export interface News {
   id: number;
   title: string;
   description: string;
@@ -9,46 +9,46 @@ export interface Notice {
   category?: string;
 }
 
-interface NoticesSliderProps {
-  notices: Notice[];
+interface NewsSliderProps {
+  news: News[];
   autoPlay?: boolean;
   autoPlayInterval?: number;
   className?: string;
 }
 
-export function NoticesSlider({ 
-  notices, 
+export function NewsSlider({ 
+  news: news, 
   autoPlay = true, 
   autoPlayInterval = 5000, 
   className = '' 
-}: NoticesSliderProps) {
+}: NewsSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (!autoPlay || notices.length <= 1) return;
+    if (!autoPlay || news.length <= 1) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
-        prevIndex === notices.length - 1 ? 0 : prevIndex + 1
+        prevIndex === news.length - 1 ? 0 : prevIndex + 1
       );
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [autoPlay, autoPlayInterval, notices.length]);
+  }, [autoPlay, autoPlayInterval, news.length]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? notices.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? news.length - 1 : currentIndex - 1);
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === notices.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === news.length - 1 ? 0 : currentIndex + 1);
   };
 
-  if (!notices || notices.length === 0) {
+  if (!news || news.length === 0) {
     return (
       <div className="flex items-center justify-center h-64 bg-gray-100 rounded-lg">
         <p className="text-gray-500">Nenhuma notícia disponível</p>
@@ -65,15 +65,15 @@ export function NoticesSlider({
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {notices.map((notice) => (
-            <div key={notice.id} className="w-full flex-shrink-0">
+          {news.map((news) => (
+            <div key={news.id} className="w-full flex-shrink-0">
               <div className="relative bg-white">
                 {/* Imagem da notícia */}
-                {notice.image && (
+                {news.image && (
                   <div className="h-48 sm:h-64 overflow-hidden">
                     <img 
-                      src={notice.image} 
-                      alt={notice.title}
+                      src={news.image} 
+                      alt={news.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -82,25 +82,25 @@ export function NoticesSlider({
                 {/* Conteúdo da notícia */}
                 <div className="p-6 sm:p-8">
                   {/* Categoria */}
-                  {notice.category && (
+                  {news.category && (
                     <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full mb-4">
-                      {notice.category}
+                      {news.category}
                     </span>
                   )}
                   
                   {/* Título */}
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 line-clamp-2">
-                    {notice.title}
+                    {news.title}
                   </h3>
                   
                   {/* Descrição */}
                   <p className="text-gray-600 text-sm sm:text-base mb-4 line-clamp-3">
-                    {notice.description}
+                    {news.description}
                   </p>
                   
                   {/* Data */}
                   <p className="text-sm text-gray-500">
-                    {new Date(notice.date).toLocaleDateString('pt-BR', {
+                    {new Date(news.date).toLocaleDateString('pt-BR', {
                       day: '2-digit',
                       month: 'long',
                       year: 'numeric'
@@ -113,7 +113,7 @@ export function NoticesSlider({
         </div>
 
         {/* Botões de navegação */}
-        {notices.length > 1 && (
+        {news.length > 1 && (
           <>
             <button
               onClick={goToPrevious}
@@ -139,9 +139,9 @@ export function NoticesSlider({
       </div>
 
       {/* Indicadores */}
-      {notices.length > 1 && (
+      {news.length > 1 && (
         <div className="flex justify-center mt-4 space-x-2">
-          {notices.map((_, index) => (
+          {news.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
@@ -160,8 +160,8 @@ export function NoticesSlider({
 }
 
 // Componente de exemplo para demonstrar o uso
-export function NoticesExample() {
-  const sampleNotices: Notice[] = [
+export function NewsExample() {
+  const sampleNews: News[] = [
     {
       id: 1,
       title: "Nova Lei de Combate ao Racismo é Aprovada",
@@ -192,7 +192,7 @@ export function NoticesExample() {
     <div className="py-12">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Últimas Notícias</h2>
-        <NoticesSlider notices={sampleNotices} />
+        <NewsSlider news={sampleNews} />
       </div>
     </div>
   );

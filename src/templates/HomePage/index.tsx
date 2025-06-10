@@ -2,7 +2,7 @@ import { Content } from "../../components/Content";
 import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
-import noticesData from "../../../data/notices/notices.json";
+import newsData from "../../../data/news/news.json";
 
 
 export function HomePage() {
@@ -77,7 +77,7 @@ export function HomePage() {
             </p>
           </div>
           <NewsSlider 
-            newsData={noticesData} 
+            newsData={newsData} 
             autoPlay={true} 
             autoPlayInterval={8000}
             maxArticles={8}
