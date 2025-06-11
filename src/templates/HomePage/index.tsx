@@ -3,16 +3,16 @@ import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
 import newsData from "../../../data/news/news.json";
-
+import { InfoCard } from "../../components/InfoCard";
 
 export function HomePage() {
   return (
     <>
-      <Content classes="mt-10">
+      <Content classes="bg-gray-50 mt-15">
         <TextField>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Entenda os Diferentes{" "}
-            <span className="text-orange-800">Tipos de Racismo</span>
+            <span className="text-orange-600">Tipos de Racismo</span>
           </h2>
           <p className="text-base sm:text-2xl">
             Este site tem como objetivo apresentar e explicar as diversas formas
@@ -65,6 +65,20 @@ export function HomePage() {
         </TextField>
       </Content>
 
+      <Content classes="bg-gray-50" direction="flex-col">
+        <TextField>
+          <h2 className="text-center text-4xl sm:text-5xl font-bold text-gray-900">
+            Diferentes Formas de{" "}
+            <span className="text-orange-600">Racismo</span>
+          </h2>
+        </TextField>
+        <Content>
+          <InfoCard />
+          <InfoCard />
+          <InfoCard />
+          <InfoCard />
+        </Content>
+      </Content>
       {/* Seção de Notícias */}
       <Content classes="bg-gray-50 py-16">
         <div className="w-full">
@@ -73,12 +87,13 @@ export function HomePage() {
               Últimas <span className="text-orange-600">Notícias</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Acompanhe as notícias mais recentes sobre racismo, direitos humanos e inclusão social
+              Acompanhe as notícias mais recentes sobre racismo, direitos
+              humanos e inclusão social
             </p>
           </div>
-          <NewsSlider 
-            newsData={newsData} 
-            autoPlay={true} 
+          <NewsSlider
+            newsData={newsData}
+            autoPlay={true}
             autoPlayInterval={8000}
             maxArticles={8}
             className="max-w-5xl mx-auto"
