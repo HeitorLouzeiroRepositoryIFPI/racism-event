@@ -1,0 +1,43 @@
+{
+  "discriminacao_geral_raca": [
+    {"raca": "Preta", "porcentagem": 84.8},
+    {"raca": "Parda", "porcentagem": 64.9},
+    {"raca": "Branca", "porcentagem": 48.6}
+  ],
+  "tipos_discriminacao_raca": {
+    "preta": [
+      {"tipo": "Tratada com menos gentileza", "porcentagem": 51.2},
+      {"tipo": "Tratada com menos respeito", "porcentagem": 49.3},
+      {"tipo": "Recebeu serviço pior em restaurantes ou lojas", "porcentagem": 37.5},
+      {"tipo": "As pessoas agiram como se tivessem medo", "porcentagem": 41.3},
+      {"tipo": "As pessoas agiram como se achassem que não é inteligente", "porcentagem": 41.9},
+      {"tipo": "Chamada por nomes ofensivos ou insultada", "porcentagem": 26.9},
+      {"tipo": "Ameaçada ou assediada fisicamente", "porcentagem": 16.2}
+    ],
+    "parda": [
+      {"tipo": "Tratada com menos gentileza", "porcentagem": 37.9},
+      {"tipo": "Tratada com menos respeito", "porcentagem": 37},
+      {"tipo": "Recebeu serviço pior em restaurantes ou lojas", "porcentagem": 29},
+      {"tipo": "As pessoas agiram como se tivessem medo", "porcentagem": 23},
+      {"tipo": "As pessoas agiram como se achassem que não é inteligente", "porcentagem": 34.6},
+      {"tipo": "Chamada por nomes ofensivos ou insultada", "porcentagem": 21.6},
+      {"tipo": "Ameaçada ou assediada fisicamente", "porcentagem": 14.7}
+    ]
+  },
+  "discriminacao_genero_raca": [
+    {"grupo": "Mulheres Pretas", "porcentagem": 83.1},
+    {"grupo": "Homens Pretos", "porcentagem": 86.8},
+    {"grupo": "Mulheres Brancas", "porcentagem": 52.3},
+    {"grupo": "Homens Brancos", "porcentagem": 44.1}
+  ],
+  "percepcao_preconceito_local": [
+    {"local": "No trabalho", "porcentagem": 90},
+    {"local": "Na escola", "porcentagem": 86},
+    {"local": "Em casa", "porcentagem": 82}
+  ],
+  "indicadores_desigualdade_raca": [
+    {"indicador": "Chance de ser vítima de homicídio (negros)", "valor": 2.6, "unidade": "vezes maior que não negros"},
+    {"indicador": "População em favelas (negros)", "porcentagem": 67},
+    {"indicador": "Taxa de desemprego (negros)", "valor": 6.9, "unidade": "% (1.6 p.p. acima da média)"}
+  ]
+}
