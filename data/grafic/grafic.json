@@ -1,0 +1,107 @@
+{
+  "titulo_noticia": "Quase 85% da população preta afirma ter sofrido discriminação racial",
+  "data_publicacao": "20/05/2025",
+  "dados_gerais": [
+    {
+      "descricao": "Porcentagem da população preta que afirma ter sofrido discriminação racial",
+      "valor": 84,
+      "unidade": "%"
+    }
+  ],
+  "discriminacao_cotidiana": [
+    {
+      "criterio": "Tratado com menos gentileza",
+      "pretos": 51.2,
+      "pardos": 44.9,
+      "brancos": 13.9,
+      "unidade": "%"
+    },
+    {
+      "criterio": "Tratado com menos respeito",
+      "pretos": 49.5,
+      "pardos": 32.1,
+      "brancos": 9.7,
+      "unidade": "%"
+    },
+    {
+      "criterio": "Recebe atendimento pior",
+      "pretos": 57.0,
+      "pardos": 28.6,
+      "brancos": 7.7,
+      "unidade": "%"
+    },
+    {
+      "criterio": "Seguido em lojas",
+      "pretos": 21.3,
+      "pardos": 8.5,
+      "brancos": 8.5,
+      "unidade": "%"
+    }
+  ],
+  "discriminacao_cor_pele": [
+    {
+      "grupo": "Pretos",
+      "valor": 84,
+      "unidade": "%"
+    },
+    {
+      "grupo": "Pardos",
+      "valor": 10.8,
+      "unidade": "%"
+    },
+    {
+      "grupo": "Brancos",
+      "valor": 8.3,
+      "unidade": "%"
+    }
+  ],
+  "multiplos_preconceitos": [
+    {
+      "grupo": "Mulheres pretas",
+      "valor": 72,
+      "unidade": "%"
+    },
+    {
+      "grupo": "Homens pretos",
+      "valor": 62.1,
+      "unidade": "%"
+    },
+    {
+      "grupo": "Mulheres brancas",
+      "valor": 30.5,
+      "unidade": "%"
+    },
+    {
+      "grupo": "Homens brancos",
+      "valor": 52.9,
+      "unidade": "%"
+    }
+  ],
+  "desigualdade_social_adicional": [
+    {
+      "descricao": "Risco de ser vítima de homicídio (negros vs não negros)",
+      "valor": 2.7,
+      "unidade": "vezes maior"
+    },
+    {
+      "descricao": "Porcentagem de pretos e pardos moradores de favelas",
+      "valor": 72.9,
+      "unidade": "%"
+    },
+    {
+      "descricao": "Taxa de desemprego - Pretos",
+      "valor": 8.4,
+      "unidade": "%"
+    },
+    {
+      "descricao": "Taxa de desemprego - Pardos",
+      "valor": 8.0,
+      "unidade": "%"
+    },
+    {
+      "descricao": "Taxa de desemprego - Brancos",
+      "valor": 5.6,
+      "unidade": "%"
+    }
+  ]
+}

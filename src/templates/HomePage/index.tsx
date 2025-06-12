@@ -2,8 +2,11 @@ import { Content } from "../../components/Content";
 import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
+import { Charts } from "../../components/Charts";
+import noticesData from "../../../data/notices/notices.json";
 import newsData from "../../../data/news/news.json";
 import { RacismTypesCarousel } from "../../components/RacismTypesCarousel";
+
 
 export function HomePage() {
   return (
@@ -101,6 +104,15 @@ export function HomePage() {
             maxArticles={8}
             className="max-w-5xl mx-auto"
           />
+        </div>
+      </Content>
+
+      {/* Seção de Gráficos e Estatísticas */}
+      <Content classes="bg-gray-100 py-16">
+        <div className="w-full">
+          <div className="max-w-6xl mx-auto">
+            <Charts />
+          </div>
         </div>
       </Content>
     </>
