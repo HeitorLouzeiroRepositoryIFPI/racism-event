@@ -1,0 +1,354 @@
+{
+  "tipos_de_racismo": [
+    {
+      "tipo": "Racismo Direto (Explícito)",
+      "definicao": "O racismo direto é a forma mais visível e consciente de discriminação racial, caracterizada por ações e declarações abertamente hostis baseadas em características fenotípicas ou origem étnica. É intencional, deliberado e facilmente identificável.",
+      "contexto_historico": "No Brasil, este tipo de racismo era institucionalizado durante a escravidão (1500-1888) e no período pós-abolição, quando leis como a 'Lei de Terras' (1850) e políticas de imigração europeia buscavam excluir negros da sociedade formal.",
+      "manifestacoes_contemporaneas": [
+        "Violência verbal: Xingamentos raciais em espaços públicos, redes sociais ou ambientes de trabalho",
+        "Violência física: Agressões motivadas por ódio racial",
+        "Discriminação em serviços: Recusa de atendimento, tratamento diferenciado em estabelecimentos",
+        "Símbolos de ódio: Uso de suásticas, referências ao KKK ou outros grupos supremacistas",
+        "Cyberbullying: Ataques organizados nas redes sociais contra pessoas negras"
+      ],
+      "impactos_psicossociais": "Causa trauma imediato, ansiedade, depressão, baixa autoestima e pode levar ao isolamento social. Estudos mostram que vítimas de racismo explícito têm maior incidência de transtornos mentais."
+    },
+    {
+      "tipo": "Racismo Estrutural",
+      "definicao": "Conceito desenvolvido por teóricos como Silvio Almeida, refere-se às desigualdades raciais enraizadas na organização política, econômica e social. É a forma 'normal' como a sociedade funciona, perpetuando privilégios brancos através de instituições aparentemente neutras.",
+      "contexto_historico": "Origina-se na colonização e escravidão, quando foi criado um sistema que colocou pessoas brancas em posições de poder e pessoas negras em situação de subalternidade. Após a abolição, não houve reparação, mantendo negros em desvantagem socioeconômica.",
+      "manifestacoes_contemporaneas": {
+        "mercado_de_trabalho": [
+          "Taxa de desemprego: Negros têm historicamente o dobro da taxa de desemprego de brancos",
+          "Diferença salarial: Mesmo com igual escolaridade, negros ganham em média 30% menos",
+          "Subemprego: Maior concentração em trabalhos informais, temporários e sem proteção social",
+          "Teto de vidro: Dificuldade de ascensão a cargos executivos e de liderança"
+        ],
+        "sistema_educacional": [
+          "Evasão escolar: Jovens negros abandonam mais cedo os estudos por necessidade econômica",
+          "Acesso ao ensino superior: Apenas 18% dos jovens negros ingressam na universidade",
+          "Qualidade do ensino: Concentração em escolas públicas com menor infraestrutura"
+        ],
+        "sistema_de_saude": [
+          "Mortalidade materna: Mulheres negras têm 3x mais chances de morrer no parto",
+          "Acesso a tratamentos: Menor acesso a medicina preventiva e tratamentos especializados",
+          "Violência obstétrica: Menor uso de anestesia em partos de mulheres negras"
+        ],
+        "sistema_de_justica": [
+          "Encarceramento: 67% da população carcerária é negra",
+          "Tempo de prisão: Negros recebem penas maiores pelos mesmos crimes",
+          "Letalidade policial: 79% das vítimas de ação policial são negras"
+        ]
+      },
+      "impactos_psicossociais": "Cria desigualdades persistentes que se perpetuam através de gerações, restringindo acesso a direitos básicos e oportunidades. Segundo o IBGE (2022), a população negra representa 56% dos brasileiros, mas apenas 19% dos mais ricos e 75% dos mais pobres."
+    },
+    {
+      "tipo": "Racismo Institucional",
+      "definicao": "Conjunto de práticas discriminatórias sistemáticas por parte de organizações (públicas ou privadas) que resultam em tratamento desigual de grupos raciais. Diferencia-se do estrutural por ser mais específico e identificável em instituições particulares.",
+      "contexto_historico": "No Brasil, o conceito ganhou força após a Constituição de 1988, que tornou o racismo crime inafiançável. Em 2005, foi criado o Estatuto da Igualdade Racial, que reconhece oficialmente o racismo institucional.",
+      "manifestacoes_contemporaneas": {
+        "seguranca_publica": [
+          "Abordagem policial diferenciada: 'Revista geral' desproporcional em jovens negros",
+          "Uso da força: Maior probabilidade de uso de violência excessiva",
+          "Investigações: Menor empenho em investigar crimes contra vítimas negras",
+          "Perfil racial: Criação de 'suspeitos padrão' baseados em estereótipos"
+        ],
+        "sistema_financeiro": [
+          "Credit scoring: Algoritmos que penalizam residentes de bairros periféricos",
+          "Atendimento bancário: Tratamento diferenciado em agências",
+          "Produtos financeiros: Oferta limitada de crédito e investimentos",
+          "Seguros: Valores mais altos para moradores de certas regiões"
+        ],
+        "mercado_imobiliario": [
+          "Locação: Recusa velada em alugar imóveis para famílias negras",
+          "Financiamento: Maior dificuldade para aprovação de crediário habitacional",
+          "Corretagem: Direcionamento para bairros específicos (segregação residencial)"
+        ],
+        "sistema_de_saude": [
+          "Atendimento hospitalar: Tempo de espera maior, menos atenção médica",
+          "Pesquisa médica: Sub-representação em estudos clínicos",
+          "Saúde mental: Subdiagnóstico de transtornos mentais, maior medicalização"
+        ]
+      }
+    },
+    {
+      "tipo": "Racismo Cultural",
+      "definicao": "Processo de hierarquização cultural que estabelece a cultura branca/europeia como superior e universal, enquanto desvaloriza, folcloriza ou demoniza manifestações culturais de origem africana e indígena.",
+      "contexto_historico": "Durante a colonização, houve um processo sistemático de aculturação forçada. A Igreja Católica proibiu religiões africanas, o Estado português impôs sua língua e costumes. No século XIX, teorias como o 'branqueamento' cultural foram oficialmente adotadas.",
+      "manifestacoes_contemporaneas": {
+        "estetica_e_padroes_de_beleza": [
+          "Cabelo: Pressão social para alisamento, produtos químicos prejudiciais, discriminação no trabalho",
+          "Traços faciais: Cirurgias para 'afinar' nariz, clarear pele",
+          "Moda: Apropriação de elementos afros sem reconhecimento da origem",
+          "Mídia: Sub-representação ou representação estereotipada"
+        ],
+        "religiosidade": [
+          "Sincretismo forçado: Orixás 'disfarçados' de santos católicos por perseguição",
+          "Intolerância atual: Ataques a terreiros, associação com 'magia negra'",
+          "Hierarquia religiosa: Religiões cristãs vistas como 'superiores'",
+          "Falta de reconhecimento: Não reconhecimento oficial de feriados de matriz africana"
+        ],
+        "linguagem_e_comunicacao": [
+          "Português brasileiro: Não reconhecimento de influências bantu e iorubá",
+          "Gírias e expressões: Criminalização de formas de falar periféricas",
+          "Literatura: Canon literário predominantemente branco e masculino",
+          "Oralidade: Desvalorização da tradição oral africana"
+        ],
+        "alimentacao": [
+          "Culinária afro-brasileira: Folclorização da comida baiana, não reconhecimento da sofisticação",
+          "Hierarquia gastronômica: Comida francesa/italiana como 'alta gastronomia'",
+          "Ingredientes: Estigmatização de alimentos como mandioca, inhame, dendê"
+        ]
+      }
+    },
+    {
+      "tipo": "Racismo Recreativo",
+      "definicao": "Conceito desenvolvido por Adilson Moreira, refere-se ao uso do humor como forma de perpetuar estereótipos raciais e normalizar a discriminação. Funciona como válvula de escape para hostilidades raciais socialmente reprimidas.",
+      "mecanismos_psicologicos": [
+        "Minimização: 'Era só uma piada' deslegitima o sofrimento da vítima",
+        "Cumplicidade social: Risadas coletivas criam consenso sobre estereótipos",
+        "Desumanização gradual: Repetição normaliza a visão de negros como objetos de diversão"
+      ],
+      "manifestacoes_contemporaneas": {
+        "humor_midiatico": [
+          "Stand-up comedy: Piadas que reforçam estereótipos sobre criminalidade, sexualidade, inteligência",
+          "Programas de TV: Personagens caricatos, blackface, imitações exageradas",
+          "Memes: Propagação viral de conteúdo racista disfarçado de humor"
+        ],
+        "ambiente_corporativo": [
+          "'Brincadeiras' no trabalho: Comentários sobre cabelo, música, habilidades",
+          "Eventos sociais: Piadas em happy hours, festas de empresa",
+          "Apelidos: Uso de termos raciais como forma de 'carinho'"
+        ],
+        "redes_sociais": [
+          "Viral racism: Compartilhamento massivo de conteúdo racista 'engraçado'",
+          "Comentários: Piadas em postagens de pessoas negras",
+          "Desafios: Challenges que ridicularizam características raciais"
+        ]
+      },
+      "impacto_na_vitima": "Cria ambiente hostil, reduz autoestima, causa ansiedade social, pode levar ao isolamento e evitamento de espaços onde isso ocorre."
+    },
+    {
+      "tipo": "Racismo Ambiental",
+      "definicao": "Conceito que descreve como comunidades racializadas e de baixa renda são desproporcionalmente expostas a riscos ambientais e têm menor acesso a ambientes saudáveis e recursos naturais.",
+      "contexto_historico": "Movimento começou nos EUA nos anos 1980. No Brasil, ganha relevância com estudos sobre localização de aterros sanitários, indústrias poluentes e falta de saneamento em comunidades negras e periféricas.",
+      "manifestacoes_contemporaneas": {
+        "localizacao_de_riscos_ambientais": [
+          "Aterros sanitários: 80% localizados próximos a comunidades negras e pobres",
+          "Indústrias químicas: Instalação preferencial em bairros periféricos",
+          "Mineração: Impactos em quilombos e comunidades tradicionais",
+          "Usinas: Termelétricas e nucleares próximas a populações vulneráveis"
+        ],
+        "falta_de_infraestrutura": [
+          "Saneamento básico: Apenas 43% das famílias negras têm acesso a esgoto tratado",
+          "Água potável: Qualidade inferior em bairros periféricos",
+          "Coleta de lixo: Serviço irregular ou inexistente",
+          "Áreas verdes: Menor quantidade de parques e praças"
+        ],
+        "mudancas_climaticas": [
+          "Vulnerabilidade: Comunidades pobres mais expostas a enchentes, deslizamentos",
+          "Adaptação: Menor capacidade de se adaptar a mudanças climáticas",
+          "Migração climática: Deslocamentos forçados afetam mais populações vulneráveis"
+        ]
+      },
+      "casos_especificos_no_brasil": [
+        "Baía de Guanabara (RJ): Poluição industrial afetando comunidades pesqueiras negras",
+        "Cubatão (SP): 'Vale da Morte' com alta concentração de indústrias químicas",
+        "Quilombo do Rio dos Macacos (BA): Conflito com Base Naval por território"
+      ]
+    },
+    {
+      "tipo": "Racismo Religioso",
+      "definicao": "Modalidade específica de intolerância que atinge majoritariamente religiões de matriz africana, caracterizada pela perseguição, desqualificação e criminalização de práticas espirituais afrobrasileiras.",
+      "contexto_historico": "Durante a escravidão, religiões africanas foram proibidas pelo Código Criminal de 1890, que criminalizava 'práticas de magia'. O sincretismo foi uma estratégia de resistência. Mesmo após a democratização, a perseguição continua, agora frequentemente ligada ao crescimento de denominações neopentecostais.",
+      "manifestacoes_contemporaneas": {
+        "violencia_fisica": [
+          "Ataques a terreiros: Depredação, incêndios criminosos, invasões",
+          "Agressões a praticantes: Violência contra pessoas em trajes religiosos",
+          "Profanação: Destruição de objetos sagrados, oferendas",
+          "Ameaças: Intimidação de líderes religiosos"
+        ],
+        "discriminacao_institucional": [
+          "Registros: Dificuldade para obter CNPJ, reconhecimento oficial",
+          "Espaços públicos: Proibição de rituais em praias, parques",
+          "Mídia: Cobertura tendenciosa, associação com criminalidade",
+          "Sistema jurídico: Menor proteção legal comparado a outras religiões"
+        ],
+        "estigmatizacao_social": [
+          "Mercado de trabalho: Discriminação contra praticantes",
+          "Ambiente escolar: Bullying contra crianças de famílias do candomblé/umbanda",
+          "Saúde mental: Patologização de experiências espirituais",
+          "Habitação: Dificuldade para alugar imóveis para uso religioso"
+        ]
+      },
+      "dados_estatisticos": "Segundo o Ministério dos Direitos Humanos, 71% das denúncias de intolerância religiosa no Brasil são contra religiões afro-brasileiras, que representam apenas 0,3% da população."
+    },
+    {
+      "tipo": "Racismo Algorítmico",
+      "definicao": "Discriminação racial perpetuada por sistemas de inteligência artificial e algoritmos que reproduzem ou amplificam vieses humanos presentes nos dados de treinamento ou na programação, resultando em tratamento desigual automatizado.",
+      "contexto_historico": "Algoritmos aprendem com dados históricos que refletem discriminações passadas. Se dados de contratação mostram preferência histórica por brancos, o algoritmo aprenderá esse padrão. Além disso, programadores (majoritariamente brancos) podem inconscientemente inserir vieses.",
+      "manifestacoes_contemporaneas": {
+        "reconhecimento_facial": [
+          "Falhas técnicas: Menor precisão para rostos negros (até 35% de erro vs 1% para homens brancos)",
+          "Vigilância: Maior probabilidade de identificação incorreta levando a prisões equivocadas",
+          "Acesso: Sistemas de entrada que não reconhecem funcionários negros"
+        ],
+        "redes_sociais_e_busca": [
+          "Censura automática: Algoritmos removem mais conteúdo de criadores negros",
+          "Alcance reduzido: Menor visibilidade para perfis de pessoas negras",
+          "Resultados de busca: Associações negativas automáticas",
+          "Anúncios: Direcionamento discriminatório de oportunidades de emprego"
+        ],
+        "sistema_financeiro": [
+          "Credit scoring: Penalização por códigos postais de bairros periféricos",
+          "Empréstimos: Taxas mais altas baseadas em algoritmos",
+          "Seguros: Cálculos que desfavorecem comunidades negras",
+          "Investimentos: Roboadvisors com vieses em recomendações"
+        ],
+        "recrutamento_e_rh": [
+          "Triagem de currículos: Algoritmos que filtram nomes 'não brancos'",
+          "Avaliação de candidatos: Sistemas que penalizam sotaques, linguagem não-padrão",
+          "Promoções internas: IA que reproduz padrões históricos de promoção"
+        ],
+        "sistema_de_justica": [
+          "Reincidência: Algoritmos como COMPAS que preveem maior reincidência para negros",
+          "Sentenças: Sistemas que sugerem penas mais severas",
+          "Liberdade condicional: IA que recomenda menos liberações"
+        ]
+      },
+      "impactos_psicossociais": "Cria discriminação em larga escala de forma automatizada e difícil de detectar, afetando o acesso a oportunidades, serviços e espaços. Legitima a desigualdade através da percepção de 'neutralidade tecnológica' dos algoritmos.",
+      "exemplos": [
+        "Amazon: Descartou sistema de IA para recrutamento que discriminava mulheres",
+        "Microsoft Tay: Chatbot que se tornou racista em 24h",
+        "Google Fotos: Classificou pessoas negras como 'gorilas'"
+      ],
+      "enfrentamento": [
+        "Auditoria de algoritmos: Verificação independente de vieses em sistemas automatizados",
+        "Diversidade em times de desenvolvimento: Incluir pessoas negras nos processos de desenvolvimento de IA",
+        "Regulação: Estabelecer diretrizes éticas e legais para usos de algoritmos em decisões importantes"
+      ]
+    },
+    {
+      "tipo": "Racismo Velado (Implícito)",
+      "definicao": "Forma sutil e indireta de racismo que se manifesta através de microagressões, comentários ambíguos e comportamentos que, embora não sejam explicitamente hostis, perpetuam estereótipos e hierarquias raciais. É particularmente perigoso por ser difícil de identificar e confrontar.",
+      "contexto_historico": "Ganhou proeminência após movimentos pelos direitos civis, quando expressões abertas de racismo se tornaram socialmente inaceitáveis. Em resposta, surgiu uma forma mais sutil e codificada, permitindo que preconceitos continuassem operando sob uma fachada de aceitabilidade social.",
+      "manifestacoes_contemporaneas": {
+        "microagressoes_verbais": [
+          "'Elogios' condicionais: 'Você é bonita para uma negra', 'Você é inteligente para alguém do seu bairro'",
+          "Questionamento da origem: 'Você é brasileira mesmo?', 'De onde você veio?'",
+          "Surpresa com competência: 'Nossa, você fala muito bem!', quando pessoa tem nível superior",
+          "Toque no cabelo: Tocar sem permissão, comentários sobre textura"
+        ],
+        "ambiente_profissional": [
+          "Subestimação constante: Explicações desnecessárias sobre tarefas simples",
+          "Invisibilidade: Ideias ignoradas até serem repetidas por colegas brancos",
+          "Sobrecarga: Sempre escolhido para representar 'diversidade' em eventos",
+          "Questionamento de mérito: 'Você está aqui por cota?'"
+        ],
+        "espacos_sociais": [
+          "Vigilância excessiva: Seguimento em lojas, pedidos constantes de nota fiscal",
+          "Surpresa em espaços 'elitizados': Questionamento sobre presença em clubes, restaurantes caros",
+          "Infantilização: Tratamento condescendente, explicações simplificadas"
+        ]
+      },
+      "caracteristicas": [
+        "Negação plausível: Sempre há uma explicação 'inocente' alternativa",
+        "Impacto cumulativo: Pequenas ações que somadas causam grande dano",
+        "Invisibilidade social: Frequentemente negado ou minimizado",
+        "Difícil documentação: Raramente há 'provas' concretas"
+      ],
+      "impactos_psicossociais": "Causa 'fadiga racial' - exaustão mental constante de ter que interpretar se situações são ou não racistas. Leva a hipervigilância, ansiedade e questionamento da própria percepção.",
+      "enfrentamento": [
+        "Letramento racial: Compreender as nuances do racismo velado e como identificá-lo",
+        "Apoio em grupo: Compartilhar experiências para validar vivências",
+        "Confronto estratégico: Aprender técnicas para nomear situações de microagressão"
+      ]
+    },
+    {
+      "tipo": "Xenorracismo",
+      "definicao": "Intersecção entre xenofobia e racismo, onde a discriminação contra estrangeiros é intensificada quando estes são racializados (não-brancos). Combina preconceitos raciais com nacionalistas, criando camadas múltiplas de discriminação.",
+      "contexto_historico": "No Brasil, há histórico de recepção diferenciada de imigrantes: europeus foram incentivados (políticas de branqueamento), enquanto africanos e asiáticos enfrentaram restrições. Atualmente, refugiados e imigrantes de países africanos, Haiti e Venezuela enfrentam discriminação intensificada.",
+      "manifestacoes_contemporaneas": {
+        "imigrantes_haitianos": [
+          "Mercado de trabalho: Exploração em condições análogas à escravidão",
+          "Habitação: Confinamento em cortiços superlotados",
+          "Serviços públicos: Dificuldade de acesso a saúde e educação",
+          "Violência: Ataques físicos e verbais em espaços públicos"
+        ],
+        "refugiados_africanos": [
+          "Documentação: Demora excessiva em processos de regularização",
+          "Reconhecimento profissional: Não validação de diplomas e experiência",
+          "Discriminação religiosa: Quando muçulmanos, enfrentam islamofobia adicional",
+          "Isolamento social: Dificuldade de integração comunitária"
+        ],
+        "venezuelanos": [
+          "Criminalização: Associação automática com criminalidade",
+          "Competição por trabalho: Culpabilização por desemprego local",
+          "Acesso a direitos: Negação de serviços mesmo com documentação regular",
+          "Violência de gênero: Mulheres venezuelanas enfrentam exploração sexual"
+        ]
+      },
+      "impactos_psicossociais": "Causa isolamento, dificuldade de integração, subemprego crônico e baixa qualidade de vida. Imigrantes europeus ou norte-americanos raramente enfrentam as mesmas barreiras, evidenciando o componente racial da discriminação.",
+      "enfrentamento": [
+        "Políticas de acolhimento: Programas específicos para integração de imigrantes racializados",
+        "Reconhecimento de diplomas: Simplificar processos para validação de formação estrangeira",
+        "Educação intercultural: Promover trocas culturais e combate ao preconceito nas escolas"
+      ]
+    },
+    {
+      "tipo": "Racismo Científico",
+      "definicao": "Uso pseudocientífico de metodologias de pesquisa para justificar hierarquias raciais e legitimar discriminação. Historicamente usado para fundamentar escravidão, colonização e políticas segregacionistas.",
+      "contexto_historico": "Surgiu no século XIX com teorias pseudo-científicas para justificar a escravidão e colonização. No Brasil, teorias de branqueamento populacional e marginalização de saberes não-europeus foram oficializadas pelo Estado.",
+      "manifestacoes_contemporaneas": {
+        "pseudociencia_genetica": [
+          "Determinismo genético: Atribuir diferenças sociais a diferenças genéticas",
+          "Testes de QI: Uso inadequado para justificar desigualdades educacionais",
+          "Medicina racializada: Assumir diferenças biológicas onde não existem"
+        ],
+        "antropologia_fisica": [
+          "Medições corporais: Tentativas de correlacionar físico com comportamento",
+          "Paleontologia: Interpretações tendenciosas sobre evolução humana",
+          "Genética de populações: Mal uso de dados genéticos para criar hierarquias"
+        ],
+        "neurociencia": [
+          "Diferenças cerebrais: Tentativas de encontrar diferenças neurológicas entre raças",
+          "Estudos de comportamento: Pesquisas que ignoram fatores socioeconômicos",
+          "Testes cognitivos: Instrumentos culturalmente enviesados"
+        ]
+      },
+      "impactos_psicossociais": "Legitimou práticas discriminatórias com o selo da 'ciência', causando profundos traumas intergeracionais e a perpetuação de estereótipos. Mesmo após refutação científica, suas teses ainda impactam o imaginário social.",
+      "enfrentamento": [
+        "Genética moderna: Demonstra que há mais diversidade genética dentro de grupos raciais que entre eles",
+        "Neurociência: Plasticidade cerebral explicada por fatores ambientais, não raciais",
+        "Antropologia: Raça como construção social, não categoria biológica",
+        "Diversidade na ciência: Incluir cientistas negros e perspectivas diversas na pesquisa"
+      ]
+    },
+    {
+      "tipo": "Colorismo",
+      "definicao": "Sistema de discriminação que privilegia pessoas de pele mais clara dentro do próprio grupo racial, criando hierarquias internas baseadas na proximidade com a brancura. É produto da colonização e da valorização da estética europeia.",
+      "contexto_historico": "Durante a escravidão, havia tratamento diferenciado entre escravizados de pele mais clara (frequentemente filhos de estupro de senhores) e os de pele mais escura. Essa divisão foi usada estrategicamente para enfraquecer resistência e criar conflitos internos.",
+      "manifestacoes_contemporaneas": {
+        "sistema_de_privilegios_por_tonalidade": [
+          "'Pele clara, porta aberta': Maior facilidade em empregos, relacionamentos, espaços sociais",
+          "Representatividade: Preferência por negros de pele clara na mídia, publicidade",
+          "Padrões familiares: Tratamento preferencial dentro das próprias famílias",
+          "Mercado matrimonial: Valorização de parceiros de pele mais clara"
+        ],
+        "linguagem_do_colorismo": [
+          "'Melhorou a raça': Comentários sobre bebês de pele mais clara",
+          "'Cor do pecado': Fetichização de tons de pele específicos",
+          "'Moreninha': Negação da negritude através de eufemismos",
+          "'Boa aparência': Código para excluir negros retintos"
+        ]
+      },
+      "impactos_psicossociais": "Cria divisões dentro da própria comunidade negra, dificultando a solidariedade racial e perpetuando hierarquias de valor baseadas em padrões eurocêntricos. Causa baixa autoestima em pessoas de pele mais escura, isolamento e ansiedade social.",
+      "enfrentamento": [
+        "Educação antirracista: Compreender origens históricas do colorismo",
+        "Representatividade ampla: Valorizar beleza em todos os tons",
+        "Solidariedade racial: Construir unidade apesar das diferenças de tonalidade",
+        "Terapia especializada: Tratamento psicológico com profissionais capacitados"
+      ]
+    }
+  ]
+}
