@@ -12,63 +12,44 @@ interface ChartData {
 }
 
 export function Charts() {
-  const [discriminacaoGeralData, setDiscriminacaoGeralData] = useState<ChartData[]>([]);
-  const [discriminacaoGeneroData, setDiscriminacaoGeneroData] = useState<ChartData[]>([]);
-  const [percepcaoPreconceito, setPercepcaoPreconceito] = useState<ChartData[]>([]);
-  const [indicadoresDesigualdade, setIndicadoresDesigualdade] = useState<ChartData[]>([]);
+  const [discriminacaoCorPeleData, setDiscriminacaoCorPeleData] = useState<ChartData[]>([]);
+  const [multiplosPreconceitos, setMultiplosPreconceitos] = useState<ChartData[]>([]);
+  const [desigualdadeSocial, setDesigualdadeSocial] = useState<ChartData[]>([]);
   
   useEffect(() => {
-    // Transform discriminacao_geral_raca data
-    const discriminacaoGeral = graficData.discriminacao_geral_raca.map(item => ({
-      name: item.raca,
-      value: item.porcentagem
-    }));
-    
-    // Transform discriminacao_genero_raca data
-    const discriminacaoGenero = graficData.discriminacao_genero_raca.map(item => ({
+    // Transform discriminacao_cor_pele data
+    const discriminacaoCorPele = graficData.discriminacao_cor_pele.map(item => ({
       name: item.grupo,
-      value: item.porcentagem
+      value: item.valor
     }));
     
-    // Transform percepcao_preconceito_local data
-    const percepcao = graficData.percepcao_preconceito_local.map(item => ({
-      name: item.local,
-      value: item.porcentagem
+    // Transform multiplos_preconceitos data
+    const multiplos = graficData.multiplos_preconceitos.map(item => ({
+      name: item.grupo,
+      value: item.valor
     }));
     
-    // Transform indicadores_desigualdade_raca data
-    const indicadores = graficData.indicadores_desigualdade_raca.map(item => {
-      if (item.porcentagem) {
-        return {
-          name: item.indicador,
-          value: item.porcentagem
-        };
-      } else {
-        return {
-          name: item.indicador,
-          value: item.valor || 0, // Ensure value is always a number
-          unidade: item.unidade
-        };
-      }
-    });
+    // Transform desigualdade_social_adicional data
+    const desigualdade = graficData.desigualdade_social_adicional.map(item => ({
+      name: item.descricao,
+      value: item.valor,
+      unidade: item.unidade
+    }));
     
-    setDiscriminacaoGeralData(discriminacaoGeral);
-    setDiscriminacaoGeneroData(discriminacaoGenero);
-    setPercepcaoPreconceito(percepcao);
-    setIndicadoresDesigualdade(indicadores as ChartData[]);
+    setDiscriminacaoCorPeleData(discriminacaoCorPele);
+    setMultiplosPreconceitos(multiplos);
+    setDesigualdadeSocial(desigualdade);
   }, []);
   
-  // Prepare tiposDiscriminacao data for comparison chart
-  const prepareTiposDiscriminacaoData = () => {
-    const tipos = graficData.tipos_discriminacao_raca.preta.map((item, index) => {
-      return {
-        name: item.tipo,
-        value: 0, // Placeholder value to match the DataPoint interface
-        preta: item.porcentagem,
-        parda: graficData.tipos_discriminacao_raca.parda[index].porcentagem
-      };
-    });
-    return tipos;
+  // Prepare discriminacao_cotidiana data for comparison chart
+  const prepareDiscriminacaoCotidianaData = () => {
+    return graficData.discriminacao_cotidiana.map(item => ({
+      name: item.criterio,
+      value: 0, // Placeholder value
+      pretos: item.pretos,
+      pardos: item.pardos,
+      brancos: item.brancos
+    }));
   };
   
   return (
@@ -89,33 +70,32 @@ export function Charts() {
       {/* Stats Overview Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <StatCard
-          title="Pessoas Pretas"
-          value="84.8%"
-          subtitle="relatam discriminação racial"
+          title="População Preta"
+          value="84%"
+          subtitle="sofreu discriminação racial"
           icon="P"
           color="red"
         />
         <StatCard
-          title="Pessoas Pardas"
-          value="64.9%"
-          subtitle="relatam discriminação racial"
-          icon="Pa"
+          title="Mulheres Pretas"
+          value="72%"
+          subtitle="sofrem múltiplos preconceitos"
+          icon="MP"
           color="orange"
         />
         <StatCard
-          title="Pessoas Brancas"
-          value="48.6%"
-          subtitle="relatam discriminação racial"
-          icon="B"
+          title="Homens Pretos"
+          value="62.1%"
+          subtitle="sofrem múltiplos preconceitos"
+          icon="HP"
           color="blue"
         />
         <StatCard
-          title="Diferença Racial"
-          value="36.2%"
-          subtitle="diferença entre pretas e brancas"
-          icon="Δ"
+          title="Risco de Homicídio"
+          value="2.7x"
+          subtitle="maior para negros"
+          icon="⚠"
           color="purple"
-          trend={{ value: 36, isPositive: false }}
         />
       </div>
       
@@ -125,11 +105,11 @@ export function Charts() {
         {/* Chart Card 1 */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 border border-gray-50">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Discriminação Geral por Raça</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Discriminação por Cor de Pele</h3>
             <p className="text-gray-600">Percentual de pessoas que relatam ter sofrido discriminação</p>
           </div>
           <BarChart 
-            data={discriminacaoGeralData}
+            data={discriminacaoCorPeleData}
             xDataKey="name"
             bars={[
               { dataKey: "value", fill: "url(#gradient1)", name: "Porcentagem (%)" }
@@ -141,11 +121,11 @@ export function Charts() {
         {/* Chart Card 2 */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 border border-gray-50">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Discriminação por Gênero e Raça</h3>
-            <p className="text-gray-600">Diferenças entre grupos demográficos</p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Múltiplos Preconceitos por Grupo</h3>
+            <p className="text-gray-600">Interseccionalidade de gênero e raça</p>
           </div>
           <PieChart 
-            data={discriminacaoGeneroData}
+            data={multiplosPreconceitos}
             nameKey="name"
             dataKey="value"
             colors={['#1f2937', '#374151', '#6b7280', '#9ca3af']}
@@ -158,16 +138,17 @@ export function Charts() {
       {/* Full Width Chart */}
       <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-8 border border-gray-100">
         <div className="mb-8 text-center">
-          <h3 className="text-3xl font-bold text-gray-800 mb-3">Tipos de Discriminação por Raça</h3>
-          <p className="text-gray-600 text-lg">Comparação detalhada entre pessoas pretas e pardas</p>
+          <h3 className="text-3xl font-bold text-gray-800 mb-3">Discriminação Cotidiana por Raça</h3>
+          <p className="text-gray-600 text-lg">Comparação entre pessoas pretas, pardas e brancas</p>
         </div>
         <div className="overflow-x-auto">
           <BarChart 
-            data={prepareTiposDiscriminacaoData()}
+            data={prepareDiscriminacaoCotidianaData()}
             xDataKey="name"
             bars={[
-              { dataKey: "preta", fill: "#1f2937", name: "Pessoas Pretas (%)" },
-              { dataKey: "parda", fill: "#d97706", name: "Pessoas Pardas (%)" }
+              { dataKey: "pretos", fill: "#1f2937", name: "Pessoas Pretas (%)" },
+              { dataKey: "pardos", fill: "#d97706", name: "Pessoas Pardas (%)" },
+              { dataKey: "brancos", fill: "#3b82f6", name: "Pessoas Brancas (%)" }
             ]}
             height={600}
           />
@@ -180,11 +161,11 @@ export function Charts() {
         {/* Chart Card 3 */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 border border-gray-50">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Percepção de Preconceito por Local</h3>
-            <p className="text-gray-600">Onde o preconceito é mais percebido</p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Indicadores de Desigualdade Social</h3>
+            <p className="text-gray-600">Impactos estruturais do racismo na sociedade</p>
           </div>
           <BarChart 
-            data={percepcaoPreconceito}
+            data={desigualdadeSocial.filter(item => item.unidade === '%')}
             xDataKey="name"
             bars={[
               { dataKey: "value", fill: "url(#gradient2)", name: "Porcentagem (%)" }
@@ -196,14 +177,14 @@ export function Charts() {
         {/* Chart Card 4 */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 border border-gray-50">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Indicadores de Desigualdade</h3>
-            <p className="text-gray-600">Impactos estruturais do racismo</p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Taxas de Desemprego por Raça</h3>
+            <p className="text-gray-600">Disparidades no mercado de trabalho</p>
           </div>
           <BarChart 
-            data={indicadoresDesigualdade}
+            data={desigualdadeSocial.filter(item => item.name.includes('Taxa de desemprego'))}
             xDataKey="name"
             bars={[
-              { dataKey: "value", fill: "url(#gradient3)", name: "Valor" }
+              { dataKey: "value", fill: "url(#gradient3)", name: "Taxa (%)" }
             ]}
             height={350}
           />
@@ -219,13 +200,13 @@ export function Charts() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <div className="bg-white/20 rounded-lg px-6 py-3">
-            <span className="font-semibold">84.8% pessoas pretas</span>
+            <span className="font-semibold">84% pessoas pretas</span>
           </div>
           <div className="bg-white/20 rounded-lg px-6 py-3">
-            <span className="font-semibold">64.9% pessoas pardas</span>
+            <span className="font-semibold">2.7x risco de homicídio</span>
           </div>
           <div className="bg-white/20 rounded-lg px-6 py-3">
-            <span className="font-semibold">relatam discriminação</span>
+            <span className="font-semibold">72.9% em favelas</span>
           </div>
         </div>
       </div>

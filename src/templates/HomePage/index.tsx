@@ -90,14 +90,6 @@ export function HomePage() {
       {/* Seção de Gráficos e Estatísticas */}
       <Content classes="bg-gray-100 py-16">
         <div className="w-full">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Estatísticas sobre <span className="text-orange-600">Discriminação Racial</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Dados que revelam a realidade do racismo e da desigualdade racial no Brasil
-            </p>
-          </div>
           <div className="max-w-6xl mx-auto">
             <Charts />
           </div>
