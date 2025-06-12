@@ -3,7 +3,6 @@ import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
 import { Charts } from "../../components/Charts";
-import noticesData from "../../../data/notices/notices.json";
 import newsData from "../../../data/news/news.json";
 import { RacismTypesCarousel } from "../../components/RacismTypesCarousel";
 
