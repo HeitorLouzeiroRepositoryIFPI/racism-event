@@ -3,7 +3,7 @@ import { ImageField } from "../../components/ImageField";
 import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
 import newsData from "../../../data/news/news.json";
-import { InfoCard } from "../../components/InfoCard";
+import { RacismTypesCarousel } from "../../components/RacismTypesCarousel";
 
 export function HomePage() {
   return (
@@ -65,20 +65,23 @@ export function HomePage() {
         </TextField>
       </Content>
 
-      <Content classes="bg-gray-50" direction="flex-col">
-        <TextField>
-          <h2 className="text-center text-4xl sm:text-5xl font-bold text-gray-900">
-            Diferentes Formas de{" "}
-            <span className="text-orange-600">Racismo</span>
-          </h2>
-        </TextField>
-        <Content>
-          <InfoCard />
-          <InfoCard />
-          <InfoCard />
-          <InfoCard />
-        </Content>
+      {/* Nova seção com o RacismTypesCarousel */}
+      <Content classes="bg-gray-100 py-16">
+        <div className="w-full">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Explore <span className="text-orange-600">Cada Tipo</span> em
+              Detalhe
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Selecione um tipo de racismo para compreender sua definição,
+              contexto histórico e formas de manifestação
+            </p>
+          </div>
+          <RacismTypesCarousel />
+        </div>
       </Content>
+
       {/* Seção de Notícias */}
       <Content classes="bg-gray-50 py-16">
         <div className="w-full">
