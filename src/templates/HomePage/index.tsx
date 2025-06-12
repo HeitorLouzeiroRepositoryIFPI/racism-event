@@ -4,16 +4,18 @@ import { TextField } from "../../components/TextField";
 import { NewsSlider } from "../../components/NewsSlider";
 import { Charts } from "../../components/Charts";
 import noticesData from "../../../data/notices/notices.json";
+import newsData from "../../../data/news/news.json";
+import { RacismTypesCarousel } from "../../components/RacismTypesCarousel";
 
 
 export function HomePage() {
   return (
     <>
-      <Content classes="mt-10">
+      <Content classes="bg-gray-50 mt-15">
         <TextField>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Entenda os Diferentes{" "}
-            <span className="text-orange-800">Tipos de Racismo</span>
+            <span className="text-orange-600">Tipos de Racismo</span>
           </h2>
           <p className="text-base sm:text-2xl">
             Este site tem como objetivo apresentar e explicar as diversas formas
@@ -66,6 +68,23 @@ export function HomePage() {
         </TextField>
       </Content>
 
+      {/* Nova seção com o RacismTypesCarousel */}
+      <Content classes="bg-gray-100 py-16">
+        <div className="w-full">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Explore <span className="text-orange-600">Cada Tipo</span> em
+              Detalhe
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Selecione um tipo de racismo para compreender sua definição,
+              contexto histórico e formas de manifestação
+            </p>
+          </div>
+          <RacismTypesCarousel />
+        </div>
+      </Content>
+
       {/* Seção de Notícias */}
       <Content classes="bg-gray-50 py-16">
         <div className="w-full">
@@ -74,12 +93,13 @@ export function HomePage() {
               Últimas <span className="text-orange-600">Notícias</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Acompanhe as notícias mais recentes sobre racismo, direitos humanos e inclusão social
+              Acompanhe as notícias mais recentes sobre racismo, direitos
+              humanos e inclusão social
             </p>
           </div>
-          <NewsSlider 
-            newsData={noticesData} 
-            autoPlay={true} 
+          <NewsSlider
+            newsData={newsData}
+            autoPlay={true}
             autoPlayInterval={8000}
             maxArticles={8}
             className="max-w-5xl mx-auto"

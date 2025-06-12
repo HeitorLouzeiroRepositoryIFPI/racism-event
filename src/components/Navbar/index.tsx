@@ -37,12 +37,12 @@ export function Navbar() {
         Racismo Além do Óbvio
       </a>
       <div className="space-x-6 font-bold">
-        <a href="/about" className="text-gray-300 hover:text-white transition-colors">
+        {/* <a href="/about" className="text-gray-300 hover:text-white transition-colors">
           Sobre
         </a>
         <a href="/contact" className="text-gray-300 hover:text-white transition-colors">
           Contato
-        </a>
+        </a> */}
       </div>
     </nav>
   );
