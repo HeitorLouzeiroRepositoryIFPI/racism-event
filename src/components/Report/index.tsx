@@ -86,7 +86,7 @@ export function Report() {
             Entre em contato com o MP do seu estado para formalizar uma
             denúncia.
           </p>
-          <p className="font-bold text-orange-600">www.mpf.mp.br</p>
+          <p className="font-bold text-orange-600">new.safernet.org.br/denuncie</p>
         </div>
       </div>
 
@@ -96,7 +96,7 @@ export function Report() {
           justa e igualitária.
         </p>
         <a
-          href="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/declaracoes-e-certidoes/declaracao-de-ocorrencia-de-racismo"
+          href="https://new.safernet.org.br/denuncie"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"

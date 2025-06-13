@@ -15,7 +15,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="https://falabr.cgu.gov.br/web/home"
                   className="text-gray-300 hover:text-orange-500 transition-colors duration-300"
                 >
                   Denunciar Racismo
@@ -23,7 +23,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.gov.br/ouvidorias/pt-br/ouvidorias/eventos/cursos_educacao_etnico_racial/formacao_educacao-etnico-racial-1.pdf"
                   className="text-gray-300 hover:text-orange-500 transition-colors duration-300"
                 >
                   Materiais Educativos
@@ -31,7 +31,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.planalto.gov.br/ccivil_03/leis/l7716.htm"
                   className="text-gray-300 hover:text-orange-500 transition-colors duration-300"
                 >
                   Legislação
@@ -40,11 +40,46 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>
-            © {new Date().getFullYear()} Combate ao Racismo. Todos os direitos
-            reservados.
-          </p>
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="text-center text-gray-400 mb-4">
+            <p className="text-sm font-semibold mb-2">Desenvolvido por:</p>
+            <div className="flex justify-center items-center gap-4 text-gray-300">
+              <a 
+                href="https://www.linkedin.com/in/daniel-oliveirac/" 
+                className="hover:text-orange-500 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Daniel Oliveira
+              </a>
+              <span>•</span>
+              <a 
+                href="https://www.linkedin.com/in/heitor-louzeiro/" 
+                className="hover:text-orange-500 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Heitor Louzeiro
+              </a>
+              <span>•</span>
+              <a 
+                href="https://www.linkedin.com/in/jonathan-vogado/" 
+                className="hover:text-orange-500 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jonathan Vogado
+              </a>
+              <span>•</span>
+              <span>Turma ADS</span>
+            </div>
+          </div>
+          <div className="text-center text-gray-400">
+            <p>
+              © {new Date().getFullYear()} Combate ao Racismo. Todos os direitos
+              reservados.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
