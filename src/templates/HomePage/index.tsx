@@ -5,6 +5,7 @@ import { NewsSlider } from "../../components/NewsSlider";
 import { Charts } from "../../components/Charts";
 import newsData from "../../../data/news/news.json";
 import { RacismTypesCarousel } from "../../components/RacismTypesCarousel";
+import { Report } from "../../components/Report";
 
 export function HomePage() {
   return (
@@ -58,13 +59,10 @@ export function HomePage() {
         />
         <TextField>
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">
-            Definição <span className="text-orange-500">Ampliada</span>
+        O que é <span className="text-orange-500">Racismo?</span>
           </h2>
           <p className="text-base md:text-xl text-gray-300 leading-relaxed max-w-xl">
-            O racismo direto é a forma mais visível e consciente de
-            discriminação racial, caracterizada por ações e declarações
-            abertamente hostis baseadas em características fenotípicas ou origem
-            étnica. É intencional, deliberado e facilmente identificável.
+        Racismo é um sistema de crenças, práticas e estruturas sociais que atribuem valores, direitos e oportunidades de forma desigual a pessoas ou grupos com base em características raciais ou étnicas. Ele se manifesta de diversas formas — explícitas ou sutis, individuais ou institucionais — e está presente em diferentes esferas da sociedade, como educação, mercado de trabalho, saúde, segurança pública, mídia e relações interpessoais. O racismo não se limita a atitudes hostis ou preconceituosas, mas inclui também a reprodução de privilégios, a exclusão sistemática e a negação de direitos fundamentais a determinados grupos raciais. No Brasil, o racismo é um fenômeno histórico e estrutural, profundamente enraizado desde o período colonial e que persiste até os dias atuais, impactando milhões de pessoas e perpetuando desigualdades.
           </p>
         </TextField>
       </Content>
@@ -73,28 +71,23 @@ export function HomePage() {
       <Content classes="bg-gray-700 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
           <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 flex items-center">
-              <span className="text-orange-500 mr-3 text-xl">01</span>
-              Contexto Histórico
-            </h2>
-            <p className="text-gray-300 md:text-lg leading-relaxed">
-              No Brasil, este tipo de racismo era institucionalizado durante a
-              escravidão (1500-1888) e no período pós-abolição, quando leis como
-              a "Lei de Terras" (1850) e políticas de imigração europeia
-              buscavam excluir negros da sociedade formal.
-            </p>
+        <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 flex items-center">
+          <span className="text-orange-500 mr-3 text-xl">01</span>
+          Contexto Histórico e Estrutural
+        </h2>
+        <p className="text-gray-300 md:text-lg leading-relaxed">
+          O racismo no Brasil tem raízes profundas no processo de colonização e na escravidão, que perdurou por mais de três séculos. Após a abolição, políticas públicas e práticas sociais continuaram a marginalizar populações negras, indígenas e outros grupos racializados, negando-lhes acesso a terra, educação, emprego e cidadania plena. O racismo estrutural se manifesta em leis, instituições e costumes que perpetuam desigualdades raciais, mesmo sem intenção explícita. Além disso, o racismo institucional se reflete em abordagens policiais, decisões judiciais, currículos escolares e oportunidades de ascensão social, mantendo privilégios para alguns e obstáculos para outros.
+        </p>
           </div>
 
           <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 flex items-center">
-              <span className="text-orange-500 mr-3 text-xl">02</span>
-              Impactos Psicossociais
-            </h2>
-            <p className="text-gray-300 md:text-lg leading-relaxed">
-              Causa trauma imediato, ansiedade, depressão, baixa autoestima e
-              pode levar ao isolamento social. Estudos mostram que vítimas de
-              racismo explícito têm maior incidência de transtornos mentais.
-            </p>
+        <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 flex items-center">
+          <span className="text-orange-500 mr-3 text-xl">02</span>
+          Impactos Sociais, Econômicos e Psicossociais
+        </h2>
+        <p className="text-gray-300 md:text-lg leading-relaxed">
+          O racismo afeta profundamente a vida das pessoas, gerando desigualdades em renda, acesso à saúde, educação e oportunidades profissionais. Ele contribui para a exclusão social, violência, encarceramento em massa e mortalidade precoce de populações negras e indígenas. No âmbito psicossocial, o racismo provoca sofrimento emocional, baixa autoestima, ansiedade, depressão e sensação de invisibilidade ou desvalorização. Além disso, limita o potencial de desenvolvimento individual e coletivo, prejudicando toda a sociedade ao restringir a diversidade e a justiça social. Combater o racismo exige reconhecer sua existência, promover políticas de reparação e inclusão, e transformar práticas cotidianas em todos os espaços sociais.
+        </p>
           </div>
         </div>
       </Content>
@@ -117,6 +110,23 @@ export function HomePage() {
         </div>
       </Content>
 
+      {/* Seção de Gráficos e Estatísticas */}
+      <Content classes="bg-gray-50 py-20" id="estatisticas">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Estatísticas <span className="text-orange-600">Relevantes</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto px-4 leading-relaxed">
+              Dados e estatísticas que demonstram a realidade do racismo e seus
+              impactos na sociedade brasileira
+            </p>
+          </div>
+          <div className="max-w-6xl mx-auto">
+            <Charts />
+          </div>
+        </div>
+      </Content>
       {/* Seção de Notícias */}
       <Content classes="bg-gray-50 py-20" id="noticias">
         <div className="w-full max-w-7xl mx-auto">
@@ -138,145 +148,9 @@ export function HomePage() {
           />
         </div>
       </Content>
-
-      {/* Seção de Gráficos e Estatísticas */}
-      <Content classes="bg-gray-50 py-20" id="estatisticas">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Estatísticas <span className="text-orange-600">Relevantes</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto px-4 leading-relaxed">
-              Dados e estatísticas que demonstram a realidade do racismo e seus
-              impactos na sociedade brasileira
-            </p>
-          </div>
-          <div className="max-w-6xl mx-auto">
-            <Charts />
-          </div>
-        </div>
+      <Content classes="bg-gray-50 py-20" id="denunciar">
+        <Report/>
       </Content>
-
-      {/* Seção de Denúncia */}
-      {/* <Content classes="bg-gray-50 py-20" id="denunciar">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Denunciar <span className="text-orange-600">Racismo</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto px-4 leading-relaxed">
-              O racismo é crime no Brasil. Saiba como denunciar casos de
-              discriminação racial.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-orange-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold mb-3">Disque 100</h4>
-              <p className="text-gray-600 mb-4">
-                Canal gratuito para denúncias de violações aos direitos humanos,
-                incluindo racismo.
-              </p>
-              <p className="font-bold text-orange-600">
-                Ligação gratuita, 24 horas
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-orange-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                  />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold mb-3">
-                Delegacia Especializada
-              </h4>
-              <p className="text-gray-600 mb-4">
-                Procure a delegacia mais próxima para registrar um boletim de
-                ocorrência.
-              </p>
-              <p className="font-bold text-orange-600">Lei nº 7.716/1989</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-orange-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                  />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold mb-3">Ministério Público</h4>
-              <p className="text-gray-600 mb-4">
-                Entre em contato com o MP do seu estado para formalizar uma
-                denúncia.
-              </p>
-              <p className="font-bold text-orange-600">www.mpf.mp.br</p>
-            </div>
-          </div>
-
-          <div className="mt-10 text-center">
-            <p className="text-lg text-gray-500 mb-6">
-              Denunciar é um ato de cidadania que contribui para uma sociedade
-              mais justa e igualitária.
-            </p>
-            <a
-              href="https://www.gov.br/mdh/pt-br/ondh/centrais-de-conteudo/declaracoes-e-certidoes/declaracao-de-ocorrencia-de-racismo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-            >
-              Portal de Denúncias Online
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </Content> */}
     </main>
   );
 }
