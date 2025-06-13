@@ -85,7 +85,7 @@ export function HomePage() {
       </Content>
 
       {/* Seção de Notícias */}
-      <Content classes="bg-gray-50 py-16">
+      <Content classes="bg-gray-100 py-16">
         <div className="w-full">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
