@@ -11,8 +11,8 @@ export function Navbar() {
   // Seções de navegação
   const navItems = [
     { label: "Tipos de Racismo", href: "#explorar", icon: "category" },
-    { label: "Notícias", href: "#noticias", icon: "news" },
     { label: "Estatísticas", href: "#estatisticas", icon: "chart" },
+    { label: "Notícias", href: "#noticias", icon: "news" },
   ];
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export function Navbar() {
 
     // Detecta qual seção está atualmente visível
     const detectActiveSection = () => {
-      const sections = ["explorar", "noticias", "estatisticas"];
+      const sections = ["explorar", "estatisticas", "noticias"];
       let current = "";
 
       sections.forEach((section) => {
