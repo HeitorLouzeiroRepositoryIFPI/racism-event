@@ -21,14 +21,16 @@ export function Footer() {
                   Denunciar Racismo
                 </a>
               </li>
-              <li>
+                <li>
                 <a
                   href="https://www.gov.br/ouvidorias/pt-br/ouvidorias/eventos/cursos_educacao_etnico_racial/formacao_educacao-etnico-racial-1.pdf"
                   className="text-gray-300 hover:text-orange-500 transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Materiais Educativos
                 </a>
-              </li>
+                </li>
               <li>
                 <a
                   href="https://www.planalto.gov.br/ccivil_03/leis/l7716.htm"

@@ -58,22 +58,22 @@
   "multiplos_preconceitos": [
     {
       "grupo": "Mulheres pretas",
-      "valor": 72,
+      "valor": 33,
       "unidade": "%"
     },
     {
       "grupo": "Homens pretos",
-      "valor": 62.1,
+      "valor": 29,
       "unidade": "%"
     },
     {
       "grupo": "Mulheres brancas",
-      "valor": 30.5,
+      "valor": 14,
       "unidade": "%"
     },
     {
       "grupo": "Homens brancos",
-      "valor": 52.9,
+      "valor": 24,
       "unidade": "%"
     }
   ],
