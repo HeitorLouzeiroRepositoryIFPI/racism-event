@@ -1,0 +1,111 @@
+/* Global styles for racism awareness website */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations for page elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* Custom heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+/* Consistent focus styles */
+*:focus-visible {
+  outline: 2px solid #ea580c; /* Orange 600 */
+  outline-offset: 2px;
+}
+
+/* Custom link transitions */
+a {
+  transition: color 0.3s, opacity 0.3s;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Custom card hover effect */
+.hover-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background-image: linear-gradient(120deg, #f87171 0%, #ef4444 100%);
+}
+
+.bg-gradient-secondary {
+  background-image: linear-gradient(to right, #4b5563, #1f2937);
+}
+
+/* Accessible color contrast */
+.text-accessible-gray {
+  color: #4b5563; /* gray-600 with good contrast */
+}
+
+/* Custom highlights */
+.highlight-text {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3em;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(249, 115, 22, 0.2); /* Orange with low opacity */
+  z-index: -1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
